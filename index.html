@@ -4,12 +4,223 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css"
+			rel="stylesheet"
+		/>
 
 		<title>AI-Universe-Hub</title>
 	</head>
 	<body>
-		<h1 class="text-red-600">Hello world</h1>
+		<header>
+			<div class="text-center m-5 p-3">
+				<h1 class="font-bold text-3xl">AI Universe Hub</h1>
+				<button
+					class="bg-red-500 rounded-md p-2 text-lg mt-4 shadow-sm text-white font-semibold hover:opacity-90"
+				>
+					Sort by Date
+				</button>
+			</div>
+		</header>
+		<main class="container mx-auto">
+			<!--Start card -->
+			<section>
+				<div class="grid grid-cols-3">
+					<div
+						class="max-w-sm bg-white border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 mb-10"
+					>
+						<div class="p-3">
+							<a href="#">
+								<img
+									class="rounded-xl hover:opacity-95"
+									src="./photo-1682687981907-170c006e3744.avif"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="p-5">
+							<a href="#">
+								<h5
+									class="mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white"
+								>
+									Features
+								</h5>
+							</a>
+							<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+								1. Natural language processing
+							</p>
+							<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+								2. Contextual understanding
+							</p>
+							<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+								3. Text generation
+							</p>
+							<div class="border-t-4 mt-10 pt-5 flex justify-between">
+								<div>
+									<h3 class="font-semibold text-2xl mb-2">Chat Gpt</h3>
+									<p>10/02/2023</p>
+								</div>
+								<div class="mt-3">
+									<button
+										data-modal-target="static-modal"
+										data-modal-toggle="static-modal"
+										class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+										type="button"
+									>
+										See More
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End card -->
+			<section>
+				<!-- Start ShowMore -->
+				<div class="text-center m-5 p-3">
+					<button
+						class="bg-red-500 rounded-md p-2 text-lg mt-4 shadow-sm text-white font-semibold hover:opacity-90 hidden"
+					>
+						Show More
+					</button>
+				</div>
+			</section>
+			<!-- End ShowMore -->
+			<section>
+				<!-- Start Modal -->
+				<div>
+					<!-- Modal toggle -->
 
-        <script src="./js/script.js"></script>
+					<!-- Main modal -->
+					<div
+						id="static-modal"
+						data-modal-backdrop="static"
+						tabindex="-1"
+						aria-hidden="true"
+						class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+					>
+						<div class="relative w-full max-w-screen-xl max-h-full">
+							<!-- Modal content -->
+							<div class="relative rounded-lg shadow dark:bg-gray-700">
+								<!-- modal x buttuon -->
+								<button
+									type="button"
+									class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none bg-red-600"
+									data-modal-hide="static-modal"
+									aria-label="Close"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="h-6 w-6"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M6 18L18 6M6 6l12 12"
+										/>
+									</svg>
+								</button>
+								<!-- Modal body -->
+								<div class="p-6 space-y-6 bg-white shadow-lg rounded-md">
+									<div class="grid grid-cols-1 md:grid-cols-2 bg-ros">
+										<!-- card 1 -->
+										<div
+											class="bg-rose-50 mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0"
+										>
+											<div class="text-center font-bold bg-rose-50 p-14">
+												<h1>
+													ChatGPT is an AI-powered chatbot platform that uses
+													OpenAI's GPT technology to simulate human conversation
+												</h1>
+											</div>
+											<!-- pricing -->
+											<div class="p-6 grid grid-cols-3 bg-rose-50 p-5">
+												<h1
+													class="bg-white shadow-lg text-green-500 rounded-lg text-center font-semibold p-10 mx-4"
+												>
+													10$/month basic
+												</h1>
+												<h1
+													class="bg-white shadow-lg text-orange-500 rounded-lg text-center font-semibold p-10 mx-4"
+												>
+													50$/month basic
+												</h1>
+												<h1
+													class="bg-white shadow-lg text-red-500 rounded-lg text-center font-semibold p-10 mx-4"
+												>
+													Contact us enterprice
+												</h1>
+											</div>
+											<div class="grid grid-cols-2 bg-rose-50">
+												<!-- feature -->
+												<div class="mx-10">
+													<h1 class="text-4xl font-semibold mb-5">Features</h1>
+													<ul>
+														<li>Customisable response</li>
+														<li>Multilingual Support</li>
+														<li>SeamLess integration</li>
+													</ul>
+												</div>
+												<!-- integration -->
+												<div class="mx-10 mb-12">
+													<h1 class="text-4xl font-semibold mb-5">
+														integration
+													</h1>
+													<ul>
+														<li>FB Mesenger</li>
+														<li>Slag</li>
+														<li>Telegram</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- card 2 -->
+										<div
+											class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0"
+										>
+											<a href="#!">
+												<img
+													class="rounded-t-lg relative"
+													src="https://tecdn.b-cdn.net/img/new/standard/city/041.webp"
+													alt="Hollywood Sign on The Hill"
+												/>
+												<div
+													class="bg-red-600 text-white absolute top-20 right-16 px-4 text-lg rounded-lg"
+												>
+													<h1>91% accuracy</h1>
+												</div>
+											</a>
+											<div class="p-6">
+												<h5
+													class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50"
+												>
+													Card title
+												</h5>
+												<p
+													class="mb-4 text-base text-neutral-600 dark:text-neutral-200"
+												>
+													This is a longer card with supporting text below as a
+													natural lead-in to additional content. This content is
+													a little bit longer.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Modal -->
+		</main>
+		<script src="./js/script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 	</body>
 </html>
